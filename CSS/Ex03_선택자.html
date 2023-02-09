@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03_선택자</title>
+    <style>
+        /*전체 선택자(*)*/
+/* 
+        *{
+         color: green;   
+        } */
+        /*2.요소선택자(요소이름)*/
+        /* h2{
+            color: blue;
+        } */
+        /* 3. 클래스 선택자(.클래스이름)*/
+        /* jaca수업을 들어온 선생님만 글자배경색을 검정색으로 변경*/
+        /* .java{
+            background-color: black;
+        } */
+        /* ID 선택시 (#아이디 이름) */
+        /* 데이터베이스 수업을 들어온 선생님만 글자배경색을  빨간색으로 변경*/
+        /* #db{
+            background-color: red;
+        }
+        /* html 수업을 들어온 선생님만 글자배경색을 회색으로 변경*/
+        /* #html{
+            background-color: gray;
+        }
+        성별이 여자인 선생님들만 글씨두께를 회색으로 변경*/
+        /* .f{
+            font-weight: bold;
+            color: white;
+        } */ 
+        /* 5. 그룹선택자(선택자,선택자)*/
+        /* class명이 Java이고, f인 선생님들에게 글씨 크기를 30px*/
+        /* .java {
+            font-size: 30px;
+            
+        }
+        .f{
+            font-size: 30px;
+        } */
+        /* .java,.f{
+            font-size: 30px;
+        } */
+        /* 6. 결합(게층)선택자 : 자식,자손, 일반동위,인접동위
+                                >  ,띄어쓰기 , ~   ,    +
+                                :기준선택자 계층선택자기호 변경할선택자
+             */
+             /* 6-1. body를 기준으로 해서 모든 li요소의 글자 크기를 20px로 변경 */
+             body li {
+                font-size: 20px;
+             }
+             /* 6-2  li를 기준으로 해서 class명이 f인 요소의 글자색을 green으로 변경 
+                    모든 li를 기준으로 검사 */
+             li+.f{
+                color: green;
+             }
+             /* 6-3 li를 기준으로 해서 class가 java인 배경색을 gray로 변경 */
+             li.java{
+                background-color: gray;
+             }
+    </style>
+
+</head>
+<body>
+    <h2> 빅데이터 </h2>
+    <ul>
+        <li class="java">박병관</li>
+        <li class="java f">임경남</li>
+        <li id ="html" class ="f">박수현</li>
+        <p class ="java"> Java수업 </p>
+        <li id="db">신인호</li>
+        <li>강규남</li>
+
+    </ul>
+</body>
+</html>

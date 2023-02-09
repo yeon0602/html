@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a{
+        color: blue;
+        font-size: 30px;
+    }
+    sup{
+        display: none;
+    }
+    #naver:hover{
+        color:red;
+    }
+    #naver:hover + #n{
+        color: green;
+        display: inline;
+    }
+    #daum:hover {            
+            color: red;
+      }
+    #daum:hover + #d{
+           color: green;
+           display: inline;
+    }
+    </style>
+   
+   
+</head>
+<body>
+    <a href ="http://www.naver.com" id ="naver">네이버</a> 
+    <sup id ="n">http://www.naver.com</sup>  <br>
+  
+    <a  href = "https://www.daum.net" id ="daum">다음</a>
+     <sup id="d">https://www.daum.net</sup> 
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,p,span{
+            width: 200px;
+            height :200px;
+        }
+        #tomato{
+            background-color: tomato;
+        }
+        #orange{
+            background-color: orange;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue ;
+        }
+        #navy{
+            background-color: navy;
+        }
+        #violet{
+            background-color: blueviolet;
+        }
+        div,p{
+            display: inline;
+        }
+        span{
+            display: block;
+        }
+        #aqua{
+            background-color: aqua;
+            display: inline-block;
+            width: 100px; height: 100px;
+        }
+        #gray{
+            background-color: gray;
+            display: inline-block;
+            width: 100px; height: 100px;
+        }
+        #none{
+            background-color: brown;
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--display 속성 :화면에 보여지는 방식을 지정
+        1. block : 웹 페이지의 가로 공간을 모두 차지
+                :div,p,tavle,ul
+        2. inline : 컨텐츠(내용)이 차지하는 만큼만 크기를 차지
+                    : span, a, textarea,input
+        3. inline-block :inlineblock
+                        :컨텐츠 만큼만 크기 차지 +너비/높이적용O
+        4. none : 코드에는 존재하지만, 화면에 보이지 않게 지정 -->
+        
+    <div id ="tomato"> div </div>
+    <div id = "orange"> div </div>
+    <p id ="green"> p </p>
+    <p id ="blue"> p </p>
+    <span id ="navy"> span </span>
+    <span id ="violet"> span< /span>
+    <hr>
+    <span id="aqua"> lnline-block /span>
+    <span id="gray"> lnline-block </span>
+    <hr>
+    <div id="none"> none </div>
+
+</body>
+</html>
